@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+}
+
+.cell {
+    height: 100px;
+    border: 1px solid #020d12;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
