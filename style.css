@@ -21,3 +21,9 @@
     color: red;
     font-weight: bold;
 }
+
+h1 {
+    font-size: 50px;
+    color: red;
+    text-align: center;
+}
