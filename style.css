@@ -32,5 +32,12 @@ body {
     background-image: url("chili.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: 110%;
+}
+
+button.reset {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
