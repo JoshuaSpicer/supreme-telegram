@@ -118,3 +118,11 @@ $(document).ready(function () {
     });
 });
 
+function reset() {
+    gameBoard = ['', '', '', '', '', '', '', '', ''];
+    currentPlayer = 'X';
+    document.querySelectorAll('.cell').forEach(cell => cell.textContent = '');
+    document.querySelector('.endgame').style.display = 'none';
+    document.querySelector('.endgame .text').textContent = '';
+    document.querySelector('.player-turn').textContent = `Player ${currentPlayer}'s turn`;
+}
