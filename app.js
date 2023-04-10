@@ -38,6 +38,14 @@ function isWinner() {
             $(`.cell[data-index=${winningPositions[i][0]}]`).text(currentPlayer).addClass('winner');
             $(`.cell[data-index=${winningPositions[i][1]}]`).text(currentPlayer).addClass('winner');
             $(`.cell[data-index=${winningPositions[i][2]}]`).text(currentPlayer).addClass('winner');
+
+            // Increase the score of the winning player and update the scoreboard
+            if (currentPlayer === 'X') {
+                $('.score-x').text(parseInt($('.score-x').text()) + 1);
+            } else {
+                $('.score-o').text(parseInt($('.score-o').text()) + 1);
+            }
+
             setTimeout(function () {
                 alert(`Winner: ${currentPlayer}`);
             }, 500);
