@@ -69,28 +69,32 @@ function isDraw() {
 }
 
 function reset() {
-    // Clear the board and remove any winner classes
-    $('.cell').text('').removeClass('winner');
-
-    // Reset the game state
-    numPlays = 0;
-    gameFinished = false;
-    currentPlayer = 'X';
-    currentPlays = {
-        X: [],
-        O: []
-    };
-    $('#game-status').text('');
-    $('#current-player').text(currentPlayer);
-
-    // Re-enable clicks on the board
-    $('.cell').on('click', cellClickHandler);
+    location.reload();
 }
 
-$(document).ready(function () {
-    $('.cell').on('click', cellClickHandler);
-    $('.reset').on('click', reset);
-});
+// function reset() {
+//     // Clear the board and remove any winner classes
+//     $('.cell').text('').removeClass('winner');
+
+//     // Reset the game state
+//     numPlays = 0;
+//     gameFinished = false;
+//     currentPlayer = 'X';
+//     currentPlays = {
+//         X: [],
+//         O: []
+//     };
+//     $('#game-status').text('');
+//     $('#current-player').text(currentPlayer);
+
+//     // Re-enable clicks on the board
+//     $('.cell').on('click', cellClickHandler);
+// }
+
+// $(document).ready(function () {
+//     $('.cell').on('click', cellClickHandler);
+//     $('.reset').on('click', reset);
+// });
 
 
 // Set up event listener for clicks on HTML elements with the class 'cell'
@@ -118,11 +122,11 @@ $(document).ready(function () {
     });
 });
 
-function reset() {
-    gameBoard = ['', '', '', '', '', '', '', '', ''];
-    currentPlayer = 'X';
-    document.querySelectorAll('.cell').forEach(cell => cell.textContent = '');
-    document.querySelector('.endgame').style.display = 'none';
-    document.querySelector('.endgame .text').textContent = '';
-    document.querySelector('.player-turn').textContent = `Player ${currentPlayer}'s turn`;
-}
+// function reset() {
+//     gameBoard = ['', '', '', '', '', '', '', '', ''];
+//     currentPlayer = 'X';
+//     document.querySelectorAll('.cell').forEach(cell => cell.textContent = '');
+//     document.querySelector('.endgame').style.display = 'none';
+//     document.querySelector('.endgame .text').textContent = '';
+//     document.querySelector('.player-turn').textContent = `Player ${currentPlayer}'s turn`;
+// }
